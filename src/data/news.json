@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/event1.jpg",
+    "text": "Spoke at the Global Leadership Summit 2025, Lagos."
+  },
+  {
+    "id": 2,
+    "image": "/assets/event2.jpg",
+    "text": "Keynote at the Annual Youth Empowerment Conference."
+  },
+  {
+    "id": 3,
+    "image": "/assets/event3.jpg",
+    "text": "Guest Speaker at Redeemer’s Business Forum, Abuja."
+  }
+]

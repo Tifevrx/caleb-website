@@ -1,0 +1,25 @@
+.book-video {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #f9f9f9;
+  font-family: 'Book Antiqua', 'Times New Roman', serif;
+}
+
+.book-video-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.book-video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.book-video-player {
+  width: 100%;
+  height: auto;
+}

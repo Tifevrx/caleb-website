@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("/assets/hero-image.jpg") no-repeat center top / cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* 👈 start from top instead of centered */
+  text-align: left;
+  color: white;
+  padding: 5%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin-top: 380px; /* 👈 push content lower (adjust until text is below tie) */
+  padding: 70px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ✅ Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: 250px; /* less push on small screens so text is still visible */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
