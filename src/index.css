@@ -1,9 +1,13 @@
 /* Import Book Antiqua font globally */
-@import url('https://fonts.googleapis.com/css2?family=Book+Antiqua&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Book+Antiqua&display=swap");
+
+/* * {
+  margin: 0;
+} */
 
 body {
   margin: 0;
-  font-family: 'Book Antiqua', 'Times New Roman', serif;
+  font-family: "Book Antiqua", "Times New Roman", serif;
   background: #f9f9f9;
   color: #333;
 }
