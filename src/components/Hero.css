@@ -3,11 +3,11 @@
   height: 100vh;
   background: url("/assets/hero-image.jpg") no-repeat center center / cover;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* ✅ text stays left */
   align-items: center;
   text-align: left;
   color: white;
-  padding: 5%;
+  padding-left: 8%; /* space from the edge */
 }
 
 .hero-overlay {
@@ -16,20 +16,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.35); /* dark overlay so text is visible */
   z-index: 0;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 900px;
-  margin-top: 380px;
-  padding: 70px;
+  max-width: 600px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -37,16 +35,16 @@
   font-size: 1.2rem;
 }
 
-/* ✅ Mobile-friendly adjustments */
+/* ✅ Mobile view */
 @media (max-width: 768px) {
   .hero {
-    background: url("/assets/hero-image.jpg") no-repeat top center / contain;
-    background-color: #000; /* fallback to avoid empty sides */
+    background-position: center right; /* ✅ keeps man's body in frame */
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .hero-content {
-    margin-top: 250px;
-    padding: 30px;
+    max-width: 100%; /* text takes full width */
   }
 
   .hero h1 {
