@@ -1,10 +1,10 @@
 .hero {
   position: relative;
   height: 100vh;
-  background: url("/assets/hero-image.jpg") no-repeat center top / cover;
+  background: url("/assets/hero-image.jpg") no-repeat center center / cover;
   display: flex;
   justify-content: flex-start;
-  align-items: center; /* 👈 start from top instead of centered */
+  align-items: center;
   text-align: left;
   color: white;
   padding: 5%;
@@ -24,7 +24,7 @@
   position: relative;
   z-index: 1;
   max-width: 900px;
-  margin-top: 380px; /* 👈 push content lower (adjust until text is below tie) */
+  margin-top: 380px;
   padding: 70px;
 }
 
@@ -39,8 +39,14 @@
 
 /* ✅ Mobile-friendly adjustments */
 @media (max-width: 768px) {
+  .hero {
+    background: url("/assets/hero-image.jpg") no-repeat top center / contain;
+    background-color: #000; /* fallback to avoid empty sides */
+  }
+
   .hero-content {
-    margin-top: 250px; /* less push on small screens so text is still visible */
+    margin-top: 250px;
+    padding: 30px;
   }
 
   .hero h1 {
