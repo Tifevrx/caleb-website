@@ -1,7 +1,7 @@
 .contact {
   padding: 4rem 2rem;
   background: #f9f9f9;
-  font-family: 'Book Antiqua', 'Times New Roman', serif;
+  font-family: "Book Antiqua", "Times New Roman", serif;
   color: #333;
 }
 
@@ -47,7 +47,7 @@
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'Book Antiqua', 'Times New Roman', serif;
+  font-family: "Book Antiqua", "Times New Roman", serif;
   font-size: 1rem;
 }
 
@@ -69,4 +69,14 @@
 
 .btn.primary:hover {
   background: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
 }

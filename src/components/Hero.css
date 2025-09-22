@@ -1,6 +1,7 @@
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background: url("/assets/hero-image.jpg") no-repeat center top / cover;
   display: flex;
   justify-content: flex-start;
@@ -39,8 +40,13 @@
 
 /* ✅ Mobile-friendly adjustments */
 @media (max-width: 768px) {
+  .hero {
+    background: url("/assets/hero-image-mobile.jpg") no-repeat center top /
+      cover;
+  }
   .hero-content {
-    margin-top: 250px; /* less push on small screens so text is still visible */
+    margin-top: 350px; /* less push on small screens so text is still visible */
+    padding: 20px;
   }
 
   .hero h1 {

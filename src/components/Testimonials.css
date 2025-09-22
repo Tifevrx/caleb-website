@@ -2,7 +2,7 @@
   padding: 4rem 2rem;
   background: #a67c52; /* Warm brown background */
   text-align: center;
-  font-family: 'Book Antiqua', 'Times New Roman', serif;
+  font-family: "Book Antiqua", "Times New Roman", serif;
   color: #fff;
 }
 
@@ -83,6 +83,12 @@
 }
 
 @media (max-width: 768px) {
+  .testimonials {
+    padding: 2rem;
+  }
+  .testimonials-container h2 {
+    font-size: 1.5rem;
+  }
   .arrow.left {
     left: -25px;
   }

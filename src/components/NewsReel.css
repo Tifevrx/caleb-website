@@ -1,7 +1,7 @@
 .news-reel {
   padding: 4rem 1rem;
   background: #fff;
-  font-family: 'Book Antiqua', 'Times New Roman', serif;
+  font-family: "Book Antiqua", "Times New Roman", serif;
 }
 
 .news-title {
@@ -11,11 +11,16 @@
   color: #333;
 }
 
+.news-slider .slick-track {
+  display: flex !important;
+  gap: 50px;
+}
+
 .news-card {
   background: #f5f5f5;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
   padding: 1rem;
@@ -45,4 +50,14 @@
 }
 .slick-dots li.slick-active button:before {
   color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .news-reel {
+    padding: 2rem 1rem;
+  }
+
+  .news-title {
+    font-size: 1.5rem;
+  }
 }

@@ -2,7 +2,7 @@
   padding: 4rem 1rem;
   text-align: center;
   background: #f9f9f9;
-  font-family: 'Book Antiqua', 'Times New Roman', serif;
+  font-family: "Book Antiqua", "Times New Roman", serif;
 }
 
 .book-video-title {
@@ -16,10 +16,19 @@
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .book-video-player {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .book-video {
+    padding: 2rem 1rem;
+  }
+  .book-video-title {
+    font-size: 1.5rem;
+  }
 }

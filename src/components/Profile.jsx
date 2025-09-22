@@ -4,20 +4,25 @@ import "./Profile.css";
 const Profile = () => {
   return (
     <section className="profile">
-      <div className="profile-image">
-        <img src="assets/aboutimage.jpg" alt="Dr. Caleb O. Oladipo" />
+      <div className="profile-wrapper">
+        <div className="profile-image">
+          <img src="assets/aboutimage.jpg" alt="Dr. Caleb O. Oladipo" />
+        </div>
+        <div className="profile-text">
+          <h2>About Dr. Caleb O. Oladipo</h2>
+          <p style={{ marginBottom: 0 }}>
+            Originally from Nigeria, Dr. Caleb Oladipo holds the inaugural
+            Snellings Chair of Christian Evangelism and Mission at Campbell
+            University Divinity School where he also serves as the Director of
+            the Braswell World Religions and Global Cultures Center.
+          </p>
+        </div>
       </div>
       <div className="profile-text">
-        <h2>About Dr. Caleb O. Oladipo</h2>
         <p>
-          Originally from Nigeria, Dr. Caleb Oladipo holds the inaugural
-          Snellings Chair of Christian Evangelism and Mission at Campbell
-          University Divinity School where he also serves as the Director of the
-          Braswell World Religions and Global Cultures Center.
-        </p>
-        <p>
-          Dr. Oladipo received his post-secondary education in the United States,
-          graduating from <strong>Wayland Baptist University (B.A.)</strong>,
+          Dr. Oladipo received his post-secondary education in the United
+          States, graduating from{" "}
+          <strong>Wayland Baptist University (B.A.)</strong>,
           <strong> Southeastern Baptist Theological Seminary (M.Div.)</strong>,
           <strong> Yale University Divinity School (STM)</strong>—where he was
           named the first Charles Forman Scholar in 1988—and

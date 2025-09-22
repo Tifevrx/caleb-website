@@ -26,8 +26,9 @@
   background: #f9f9f9;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  width: 100%;
   text-align: center;
 }
 
@@ -52,4 +53,16 @@
 .btn.secondary:hover {
   background: #007bff;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .books-container h2 {
+    font-size: 1.5rem;
+  }
+  .books {
+    padding: 2rem 1rem;
+  }
+  .book-card {
+    max-width: 250px;
+  }
 }
